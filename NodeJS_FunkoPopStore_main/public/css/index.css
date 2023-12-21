@@ -1,0 +1,109 @@
+/* EXTERNALS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css');
+@import url("https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css");
+
+/* MISCELANEOUS */
+@import url('./misc/variables.css');
+@import url('./misc/normalize.css');
+
+/* PARTIALS */
+@import url('./partials/header.css');
+@import url('./partials/footer.css');
+@import url('./partials/buttons.css');
+@import url('./partials/form.css');
+
+/* PAGES */
+@import url('./pages/home.css');
+@import url('./pages/shop.css');
+@import url('./pages/item.css');
+@import url('./pages/cart.css');
+@import url('./pages/admin.css');
+@import url('./pages/login.css');
+@import url('./pages/register.css');
+@import url('./pages/create.css');
+@import url('./pages/edit.css');
+@import url('./pages/contact.css');
+@import url('../css/index2.css');
+
+p {
+    font-size: var(--font-small);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.with-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.main {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        margin: 6rem;
+    }
+}
+
+.h1 {
+    font-family: var(--alternative-font);
+    font-size: var(--font-large);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+    .h1 {
+        font-size: var(--font-max);
+    }
+}
+
+.button {
+    background: #151515;
+    color: var(--light-bg-solid);
+    font-size: var(--font-xsmall);
+    transition: background .2s ease-in-out;
+    /* padding: 1.2rem 2.8rem; */
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .button {
+        font-size: var(--font-medium);
+    }
+}
+
+.button:hover {
+    background-color: var(--secondary);
+}
+
+.form__error{
+    color: red;
+    font-size: var(--font-small);
+    margin-top: 0.5rem;
+}
+
+.error-message{
+    color: red;
+    font-size: var(--font-medium);
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.error-message__text{
+    color: red;
+    font-size: var(--font-large);
+    margin-top: 0.5rem;
+    text-align: center;
+}
